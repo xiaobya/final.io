@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.centered
+	{
+		text-align: center;
+	}
+	.lefted
+	{
+		text-align: left;
+	}
+	.highlight_text
+	{
+		color: orange;
+		font-style: italic;
+	}
+	.normal_text
+	{
+		color: black;
+	}
+</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>大作业展示</title>
+</head>
+<body>
+	<h1>大作业</h1>
+	
+	<h2 class="centered">主要人物</h2>
+
+		<div class="centered">
+			<style>
+	           img{
+		            float:left;
+		            margin-left: 300px;
+	            }
+	        </style>
+			<p><img src="C:\Users\杨\Pictures\Screenshots\屏幕截图 2023-05-24 215800.png" alt="图片未显示" style="width:180px;height: 240px;margin-right: 5px;"><p>《火星救援》是美国作家安迪的一部作品</p>本部分通过jieba库对《火星救援》中的人物进行了词频分析，</p><p>希望通过词频分析了解《火星救援》中出现的主要人物，</p><p>结果以柱状图的形式呈现，点击下方链接查看具体内容：</p>
+		    <a href="E:\pycharm\pythonProject1\output\火星救援.html">火星救援</a>
+		</div>
+		<div class="centered">
+		</div>
+	</div>
+	<div class="parent">
+    <div style="clear:both">
+    	<h2 class="centered">观影评论</h2>
+    	<div class="centered">
+    		<p><img src="C:\Users\杨\Pictures\Saved Pictures\火星救援.jpeg" style="width:500px;height:400px"></p>
+    		<p>《火星救援》这部电影受到了NASA的大力支持，电影温暖又充满力量，我抓取了广大网友的观影评论，并通过词频统计将结果以词云图的形式呈现出来</p>
+    		<p>在具体实现过程中：将程序生成可执行文件在云服务器上运行，每隔10min抓取一次，抓取进行了两天，共抓取了100800条评论</p>
+    		<p>对html文件进行解析的结果存在csv文件中，接着用pandas读取csv文件，并提取出现次数最多的前100个词制成词云图</p>
+    		<a href="E:\pycharm\pythonProject1\output\统计结果-词云图.html">词云图</a>
+    	</div>
+    </div>
+    <div class="parent">
+    	<div style="clear:both;">
+    		<h2 class="centered">最近热映电影</h2>
+    		<p class="centered">最后顺便抓取了最近几天影院的热映电影，每隔1天抓取一次，抓取了4天，将每天评分前十的电影以柱状图的形式展现出来，结果如下：</p>
+    		<div class="centered"><a href="E:\pycharm\pythonProject1\output\timeline_热映.html">热映电影</a></div>
+    		
+    	</div>
+    </div>
+    
+
+</body>
+</html>
